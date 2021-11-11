@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>time-calculator</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="container">
+        <div class="velocity">
+            <h1 class="velocity__heading">Kim birinchi bo-rish-ga!</h1>
+            <form id="form" class="velocity__form">
+                <p class="velocity__text">Masofa(km)</p>
+                <div class="velocity__input">
+                    <input type="number" id="input">
+                </div>
+                <div class="velocity__btn">
+                    <button type="submit" id="btn">Hisoblash</button>
+                </div>
+            </form>
+            <ul class="velocity__cards">
+                <li class="velocity__cards-item card">
+                    <img src="./img/male-solid.svg" alt="rasm" class="card__img" style="width: 250px;height: 150px;">
+                    
+                    <h4 class="card__title">Piyoda</h4>
+                    <div class="card__text"><span id="timesoat1">0</span>soat</div>
+                    <div class="card__text"><span id="timeminute1">0</span>minut</div>
+                </li>
+                <li class="velocity__cards-item card">
+                    <img src="./img/bicycle-solid.svg" alt="rasm" class="card__img" style=" width: 250px;height: 150px;">
+                    <h4 class="card__title">Velosiped</h4>
+                    <div class="card__text"><span id="timesoat2">0</span>soat</div>
+                    <div class="card__text"><span id="timeminute2">0</span>minut</div>
+                </li>
+                <li class="velocity__cards-item card">
+                    <img src="./img/car-solid.svg" alt="rasm" class="card__img" style="width: 250px;height: 150px;">
+                    <h4 class="card__title">Mashina</h4>
+                    <div class="card__text"><span id="timesoat3">0</span>soat</div>
+                    <div class="card__text"><span id="timeminute3">0</span>minut</div>
+                </li>
+                <li class="velocity__cards-item card">
+                    <img src="./img/plane-solid.svg" alt="rasm" class="card__img" style="width: 250px;height: 150px;">
+                    <h4 class="card__title">Samalyot</h4>
+                    <div class="card__text"><span id="timesoat4">0</span>soat</div>
+                    <div class="card__text"><span id="timeminute4">0</span>minut</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
     
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>

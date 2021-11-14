@@ -391,6 +391,11 @@ body {
   height: 100%;
 }
 
+.dark {
+  background-color: grey;
+  --text-color:white;
+}
+
 .circles {
   position: absolute;
   z-index: -1;
@@ -531,6 +536,34 @@ body {
     opacity: 0;
     border-radius: 50%;
   }
+}
+
+.toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  border-radius: 150px;
+  border: 2px solid blue;
+  background-color: #ccc;
+}
+
+.toggle__child {
+  border-radius: 50%;
+  border: 2px solid blue;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.toggle--on span {
+  margin-left: 46px;
+}
+
+.toggle--on span {
+  background-color: #fff;
 }
 
 .velocity {

@@ -17,6 +17,16 @@ var minut3=document.getElementById(timeminute3);
 var soat4=document.getElementById(timesoat4);
 var minut4=document.getElementById(timeminute4);
 
+toggleBtn.addEventListener("click",function(){
+  document.body.classList.toggle("dark");
+  
+  // document.body.classList.toggle(".sun");
+  toggleBtn.classList.toggle("toggle--on");
+
+})
+
+
+
 forma.addEventListener("submit", function(e){
     e.preventDefault();
     //piyoda
@@ -39,9 +49,9 @@ forma.addEventListener("submit", function(e){
     minuteFour=(((Number(input.value)/samolyotTezlik)-Math.floor(Number(input.value)/samolyotTezlik))*60).toFixed(0);
     timesoat4.textContent=soatFour;
     timeminute4.textContent=minuteFour;
+    
 
-
-})
+} )
 
 forma.addEventListener('submit', function (evt) {
     evt.preventDefault();
@@ -70,6 +80,6 @@ forma.addEventListener('submit', function (evt) {
       resetValue(soat4, minut4);
       input.value = '';
     }
-  
     input.focus();
+    
   });    
